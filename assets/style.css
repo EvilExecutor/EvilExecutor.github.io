@@ -1,1 +1,364 @@
+/* ++++++++++++++++++
+   Startup
+   ++++++++++++++++++ */
 
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700 &display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;900&family=Ubuntu:wght@400;500;700&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-bg: #202026;
+  --clr-bgsec: #2b2b34;
+  --bg-cards: #2f2e41;
+  --clr-primary: #0bceaf;
+  --clr-h: #f9f9f9;
+  --clr-p: #f1f1f1;
+}
+
+/* ++++++++++++++++++
+   General
+   ++++++++++++++++++ */
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--clr-bg);
+}
+
+h1 {
+  font-family: "Source Code Pro", monospace;
+  color: var(--clr-h);
+  font-size: 2rem;
+}
+
+h2 {
+  color: var(--clr-h);
+  font-size: 2.8rem;
+}
+
+h3 {
+  color: var(--clr-h);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p {
+  color: var(--clr-p);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-h);
+}
+
+ul {
+  list-style: none;
+  font-size: 1.5rem;
+  color: var(--clr-h);
+}
+
+hr {
+  display: inline-block;
+  border-color: var(--clr-primary);
+  background-color: var(--clr-primary);
+  color: var(--clr-primary);
+  height: 0.4rem;
+  width: 10rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav ul {
+  font-weight: 500;
+}
+
+header {
+  background-color: var(--clr-bgsec);
+}
+
+.btn-primary {
+  color: var(--clr-h);
+  background-color: var(--clr-primary);
+  font-weight: 700;
+  display: inline-block;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+.btn-secondary {
+  color: var(--clr-h);
+  background-color: #121216;
+  font-weight: 700;
+  display: inline-block;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+.projects h3 {
+  color: var(--clr-primary);
+}
+
+.passions i {
+  font-size: 5.5rem;
+  color: var(--clr-primary);
+}
+
+.stats i {
+  color: var(--clr-primary);
+}
+
+.hero i,
+.cta i {
+  color: var(--clr-h);
+}
+
+.fa-bars {
+  color: var(--clr-h);
+  font-size: 2rem;
+}
+
+.konsole {
+  font-family: "Source Code Pro", monospace;
+}
+
+.konsole p {
+  font-size: 1.5rem;
+}
+
+.konsole b {
+  font-weight: 900;
+}
+
+.hello-desc {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.hello-desc span {
+  font-style: italic;
+}
+
+.hello {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.stats li {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.stats i {
+  color: var(--clr-primary);
+}
+
+.cta2 i,
+.cta i {
+  font-size: 2.2rem;
+}
+
+.cta-head {
+  color: var(--clr-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.cta-body {
+  color: var(--clr-h);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* ++++++++++++++++++
+   Layout (Mobile)
+   ++++++++++++++++++ */
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+i {
+  margin: 0.19em;
+}
+
+h1 {
+  display: inline;
+}
+
+.nav-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-nav {
+  width: 80%;
+  height: 50px;
+  margin: auto;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  display: none;
+}
+
+header .btn-wrapper {
+  display: none;
+}
+
+.konsole {
+  order: 1;
+  margin: 3em 0;
+  padding: 1em 2em;
+  border-radius: 0.75em;
+  background-color: var(--bg-cards);
+  display: inline-block;
+}
+
+.cta2 {
+  order: 2;
+}
+
+.stats {
+  order: 3;
+  text-align: center;
+}
+
+.cta2 img {
+  border-radius: 50%;
+  border: var(--clr-bgsec) 2.3em solid;
+  margin-bottom: 1.3em;
+  width: 80%;
+  height: 80%;
+}
+
+.cta2 {
+  align-self: center;
+  text-align: center;
+}
+
+.cta3 {
+  display: none;
+}
+
+.hello {
+  margin-top: 1.3em;
+  margin-bottom: 0.3em;
+}
+
+.stats-list {
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+.about img {
+  margin-bottom: 2.2em;
+}
+
+.about {
+  margin-bottom: 5em;
+}
+
+h2 {
+  margin-bottom: 0.8em;
+}
+
+.passions i {
+  margin-top: 0.75em;
+  bottom: 0.3em;
+}
+
+.passions h2 {
+  margin-bottom: 0.2em;
+}
+
+.passions h3 {
+  margin-bottom: 0.3em;
+}
+
+.passions {
+  margin-bottom: 5em;
+}
+
+.projects h2 {
+  margin-bottom: 2em;
+}
+
+.projects img {
+  border-radius: 2em 2em 0 0;
+}
+
+.card {
+  background-color: var(--bg-cards);
+  margin-bottom: 4em;
+  border-radius: 2em;
+}
+
+.card-body {
+  width: 80%;
+  height: 80%;
+}
+
+.card h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.card p {
+  margin-bottom: 3em;
+}
+
+.projects {
+  margin-bottom: 5em;
+}
+
+.cta-head {
+  margin-bottom: 1em;
+}
+
+.cta-body {
+  margin-bottom: 1em;
+}
+
+.cta {
+  margin-bottom: 5em;
+}
+
+footer {
+  background-color: var(--clr-bgsec);
+  height: 50px;
+  justify-content: center;
+}
+
+/* ++++++++++++++++++
+   Media Quereis (For Desktop)
+   ++++++++++++++++++ */
