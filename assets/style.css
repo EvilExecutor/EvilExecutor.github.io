@@ -294,7 +294,7 @@ h2 {
 
 .passions i {
   margin-top: 0.75em;
-  bottom: 0.3em;
+  margin-bottom: 0.5em;
 }
 
 .passions h2 {
@@ -302,7 +302,7 @@ h2 {
 }
 
 .passions h3 {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.4em;
 }
 
 .passions {
