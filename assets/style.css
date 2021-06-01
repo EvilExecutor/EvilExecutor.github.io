@@ -201,6 +201,12 @@ header {
   align-items: center;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 i {
   margin: 0.19em;
 }
@@ -362,3 +368,113 @@ footer {
 /* ++++++++++++++++++
    Media Quereis (For Desktop)
    ++++++++++++++++++ */
+
+@media screen and (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .center-off {
+    text-align: start;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  header .btn-wrapper {
+    display: flex;
+  }
+
+  nav li {
+    padding: 0 0.8em;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .hero-cont {
+    height: 100vh;
+    min-height: 550px;
+  }
+
+  .hero-cont .column {
+    align-self: center;
+  }
+
+  .konsole {
+    margin-top: 0;
+    margin-bottom: 0.75em;
+  }
+
+  .stats {
+    text-align: left;
+  }
+
+  .cta3 {
+    display: flex;
+  }
+
+  .stats-list {
+    margin-bottom: 3em;
+  }
+
+  .cta3 .btn-primary {
+    margin-right: 1em;
+  }
+
+  .avatar {
+    width: 75%;
+    margin: auto;
+  }
+
+  .about img {
+    width: 80%;
+    text-align: justify;
+  }
+
+  .about-content {
+    width: 75%;
+    margin: auto;
+  }
+
+  .about {
+    margin-bottom: 15em;
+  }
+
+  .passions h2 {
+    text-align: center;
+  }
+
+  .passions-col {
+    width: 90%;
+    margin: auto;
+  }
+
+  .passions {
+    margin-bottom: 15em;
+  }
+
+  .projects .card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .projects {
+    margin-bottom: 15em;
+  }
+
+  .cta {
+    margin-bottom: 10em;
+  }
+}
