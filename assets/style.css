@@ -391,6 +391,10 @@ footer {
     display: none;
   }
 
+  .desktop {
+    display: flex;
+  }
+
   nav {
     display: flex;
   }
