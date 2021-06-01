@@ -201,6 +201,10 @@ header {
   align-items: center;
 }
 
+.desktop {
+  display: none;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
