@@ -362,6 +362,10 @@ header .btn-wrapper {
   margin-bottom: 5em;
 }
 
+.avatar img:hover {
+  opacity: 0.8;
+}
+
 .about img {
   margin-bottom: 2.2em;
 }
