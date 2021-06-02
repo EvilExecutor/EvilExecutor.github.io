@@ -5,8 +5,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700 &display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;900&family=Ubuntu:wght@400;500;700&display=swap");
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--clr-bgsec);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0bceaedc;
+}
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -61,6 +79,10 @@ a {
   color: var(--clr-h);
 }
 
+a:hover {
+  color: var(--clr-primary);
+}
+
 ul {
   list-style: none;
   font-size: 1.5rem;
@@ -78,6 +100,10 @@ hr {
 
 img {
   max-width: 100%;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 nav ul {
@@ -110,6 +136,12 @@ header {
   cursor: pointer;
 }
 
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+}
+
 .projects h3 {
   color: var(--clr-primary);
 }
@@ -137,6 +169,13 @@ header {
   border: var(--clr-primary) solid 5px;
 }
 
+.cta i:hover,
+.cta2 i:hover {
+  color: var(--clr-primary);
+  transform: translateY(-1px);
+  -webkit-transform: translateY(-1px);
+}
+
 .fa-bars {
   color: var(--clr-h);
   font-size: 2rem;
@@ -144,6 +183,27 @@ header {
 
 .konsole {
   font-family: "Source Code Pro", monospace;
+}
+
+.konsole span {
+  display: inline-block;
+  width: 7px;
+  height: 1.25rem;
+  background: var(--clr-primary);
+  border-radius: 1px;
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .konsole p {
@@ -217,6 +277,11 @@ header {
   align-items: center;
 }
 
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
 i {
   margin: 0.19em;
 }
@@ -253,11 +318,11 @@ header .btn-wrapper {
 
 .konsole {
   order: 1;
+  width: 310px;
   margin: 3em 0;
   padding: 1em 2em;
   border-radius: 0.75em;
   background-color: var(--clr-bgsec);
-  display: inline-block;
 }
 
 .cta2 {
@@ -375,6 +440,32 @@ footer {
   justify-content: center;
 }
 
+.fa-heartbeat {
+  color: #b81d1d;
+  animation: beat 2s ease infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
 /* ++++++++++++++++++
    Media Quereis (For Desktop)
    ++++++++++++++++++ */
@@ -430,7 +521,6 @@ footer {
     margin-top: 0;
     margin-bottom: 0.75em;
   }
-
   .stats {
     text-align: left;
   }
