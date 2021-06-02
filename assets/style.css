@@ -94,8 +94,9 @@ header {
   font-weight: 700;
   display: inline-block;
   border: none;
-  padding: 0.5em 1em;
+  padding: 0.75em 2em;
   border-radius: 0.5em;
+  cursor: pointer;
 }
 
 .btn-secondary {
@@ -104,8 +105,9 @@ header {
   font-weight: 700;
   display: inline-block;
   border: none;
-  padding: 0.5em 1em;
+  padding: 0.75em 2em;
   border-radius: 0.5em;
+  cursor: pointer;
 }
 
 .projects h3 {
@@ -121,9 +123,18 @@ header {
   color: var(--clr-primary);
 }
 
-.hero i,
+.cta2 i,
 .cta i {
   color: var(--clr-h);
+  font-size: 2.2rem;
+  padding: 0.35em;
+  border: var(--clr-bgsec) solid 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cta i {
+  border: var(--clr-primary) solid 5px;
 }
 
 .fa-bars {
@@ -164,11 +175,6 @@ header {
 
 .stats i {
   color: var(--clr-primary);
-}
-
-.cta2 i,
-.cta i {
-  font-size: 2.2rem;
 }
 
 .cta-head {
@@ -250,7 +256,7 @@ header .btn-wrapper {
   margin: 3em 0;
   padding: 1em 2em;
   border-radius: 0.75em;
-  background-color: var(--bg-cards);
+  background-color: var(--clr-bgsec);
   display: inline-block;
 }
 
@@ -328,7 +334,7 @@ h2 {
 }
 
 .card {
-  background-color: var(--bg-cards);
+  background-color: var(--clr-bgsec);
   margin-bottom: 4em;
   border-radius: 2em;
 }
