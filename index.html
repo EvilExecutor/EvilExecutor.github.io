@@ -17,15 +17,15 @@
             </div>
             <nav>
               <ul class="flex">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Passions</a></li>
-                <li><a href="#">Technologies</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="https://evilexecutor.github.io">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#passions">Passions</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#projects">Projects</a></li>
               </ul>
             </nav>
             <div class="btn-wrapper">
-              <a href="#"
+              <a href="#team-up"
                 ><button class="btn-primary">LET'S TEAM UP!</button></a
               >
             </div>
@@ -89,8 +89,10 @@
               </ul>
             </div>
             <div class="column cta3">
-              <button class="btn-primary">About Me</button>
-              <button class="btn-secondary">My Projects -></button>
+              <a href="#about"><button class="btn-primary">About Me</button></a>
+              <a href="#projects"
+                ><button class="btn-secondary">My Projects -></button></a
+              >
             </div>
           </div>
           <div class="column cta2">
@@ -108,7 +110,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container flex">
           <div class="column">
             <img src="./assets/about.png" alt="About Illustation" />
@@ -136,7 +138,7 @@
           </div>
         </div>
       </section>
-      <section class="passions center">
+      <section class="passions center" id="passions">
         <hr />
         <h2>My Passions</h2>
         <div class="container flex">
@@ -179,7 +181,7 @@
         </div>
       </section>
       <section class="technologies"></section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="center">
           <hr />
         </div>
@@ -232,7 +234,7 @@
           </div>
         </div>
       </section>
-      <section class="cta">
+      <section class="cta" id="team-up">
         <div class="container center">
           <p class="cta-head">
             Lorem ipsum is placeholder text commonly used in the
@@ -261,5 +263,15 @@
       src="https://kit.fontawesome.com/9c2f41d45d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+        new Crate({
+          server: '766619808971227167', // SkilleX™ Community
+          channel: '786463248907501618' // #ッ𝐆eneral-chat
+        })
+        crate.notify({
+        content: `**Hey, We would ❤️ clear your doubts, Reach us here!**`,
+        avatar: 'https://cdn.discordapp.com/avatars/715261770045980782/855e3e93e47818535d1bb06647cec592.png?size=256',
+      })
+    </script>
   </body>
 </html>
