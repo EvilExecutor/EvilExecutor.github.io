@@ -25,6 +25,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -441,7 +442,7 @@ footer {
 }
 
 .fa-heartbeat {
-  color: #b81d1d;
+  color: #b62929;
   animation: beat 2s ease infinite;
 }
 

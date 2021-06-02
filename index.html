@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>EvilExecutor's Portfolio</title>
   </head>
   <body>
@@ -67,10 +71,19 @@
             <div class="div">
               <img src="./assets/avatar.jpg" alt="My Avatar" />
             </div>
-            <i class="fab fa-github"></i>
-            <i class="fab fa-discord"></i>
-            <i class="fas fa-envelope-open"></i>
-            <i class="fab fa-twitter"></i>
+            <div
+              class="wow animate__animated animate__fadeIn animate__slower"
+              data-wow-delay="1s"
+            >
+              <a href="https://github.com/EvilExecutor" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <i class="fab fa-discord"></i>
+              <i class="fas fa-envelope-open"></i>
+              <a href="https://twitter.com/EvilExecutor" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
           </div>
         </div>
         <div class="container flex hero-cont desktop">
@@ -111,24 +124,37 @@
             <div class="avatar">
               <img src="./assets/avatar.jpg" alt="My Avatar" />
             </div>
-            <a href="https://github.com/EvilExecutor" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <i class="fab fa-discord"></i>
-            <i class="fas fa-envelope-open"></i>
-            <a href="https://twitter.com/EvilExecutor" target="_blank"
-              ><i class="fab fa-twitter"></i
-            ></a>
+            <div
+              class="wow animate__animated animate__fadeIn animate__slower"
+              data-wow-delay="1s"
+            >
+              <a href="https://github.com/EvilExecutor" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+              <i class="fab fa-discord"></i>
+              <i class="fas fa-envelope-open"></i>
+              <a href="https://twitter.com/EvilExecutor" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </div>
           </div>
         </div>
       </section>
       <section class="about" id="about">
         <div class="container flex">
-          <div class="column">
+          <div
+            class="column wow animate__animated animate__fadeInUp animate__slow"
+          >
             <img src="./assets/about.png" alt="About Illustation" />
           </div>
           <div class="column">
-            <div class="about-content">
+            <div
+              class="
+                about-content
+                wow
+                animate__animated animate__fadeInRight animate__slow
+              "
+            >
               <div class="center center-off">
                 <hr />
               </div>
@@ -150,7 +176,15 @@
           </div>
         </div>
       </section>
-      <section class="passions center" id="passions">
+      <section
+        class="
+          passions
+          center
+          wow
+          animate__animated animate__fadeInRight animate__slower
+        "
+        id="passions"
+      >
         <hr />
         <h2>My Passions</h2>
         <div class="container flex">
@@ -199,7 +233,13 @@
         </div>
         <h2 class="center">My Projects</h2>
         <div class="container flex">
-          <div class="column">
+          <div
+            class="
+              column
+              wow
+              animate__animated animate__fadeInLeft animate__slow
+            "
+          >
             <div class="card flex-col justify">
               <img src="./assets/project.png" alt="" />
               <div class="card-body">
@@ -214,7 +254,9 @@
               </div>
             </div>
           </div>
-          <div class="column">
+          <div
+            class="column wow animate__animated animate__fadeInUp animate__slow"
+          >
             <div class="card flex-col justify">
               <img src="./assets/project.png" alt="" />
               <div class="card-body">
@@ -229,7 +271,13 @@
               </div>
             </div>
           </div>
-          <div class="column">
+          <div
+            class="
+              column
+              wow
+              animate__animated animate__fadeInRight animate__slow
+            "
+          >
             <div class="card flex-col justify">
               <img src="./assets/project.png" alt="" />
               <div class="card-body">
@@ -246,7 +294,10 @@
           </div>
         </div>
       </section>
-      <section class="cta" id="team-up">
+      <section
+        class="cta wow animate__animated animate__fadeIn animate__slower"
+        id="team-up"
+      >
         <div class="container center">
           <p class="cta-head">
             Lorem ipsum is placeholder text commonly used in the
@@ -274,6 +325,10 @@
         <i class="fas fa-heartbeat"></i> & 🤗
       </p>
     </footer>
+    <script src="assets/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script
       src="https://kit.fontawesome.com/9c2f41d45d.js"
       crossorigin="anonymous"
