@@ -16,11 +16,32 @@
         <header>
           <div class="container-nav nav-flex">
             <a href="./index.html"> <h1>ExE</h1></a>
-            <div class="menu">
-              <i class="fas fa-bars"></i>
-            </div>
             <nav>
-              <ul class="flex">
+              <div class="menu">
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="myFunction()"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+              <ul class="mobile" id="mobile-links">
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="myFunction()"
+                  ><i class="fas fa-times"></i
+                ></a>
+                <li class="bold">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#passions">Passions</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+              <ul class="flex desktop">
                 <li class="bold">
                   <a href="./index.html">Home</a>
                 </li>
@@ -335,6 +356,16 @@
         <i class="fas fa-heartbeat"></i> & 🤗
       </p>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mobile-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <script src="assets/wow.min.js"></script>
     <script>
       new WOW().init();

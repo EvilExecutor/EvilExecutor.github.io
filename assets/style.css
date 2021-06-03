@@ -309,8 +309,32 @@ h1 {
   margin: auto;
 }
 
-nav {
+.mobile-links {
   display: none;
+}
+
+nav .mobile {
+  text-align: center;
+  padding: 3em;
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  width: 75%;
+  height: 100vh;
+  background-color: var(--bg-cards);
+}
+
+nav .mobile li {
+  display: block;
+  padding: 1em;
+  border-bottom: var(--clr-primary) solid 3px;
+}
+
+.fa-times {
+  font-size: 3rem;
+  color: rgb(212, 78, 78);
+  margin-bottom: 3em;
 }
 
 header .btn-wrapper {
@@ -357,7 +381,7 @@ header .btn-wrapper {
   border-radius: 50%;
   border: var(--clr-bgsec) 2.5em solid;
   margin-bottom: 1.3em;
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
@@ -548,8 +572,8 @@ footer {
   }
 
   .avatar {
-    width: 55%;
-    height: 55%;
+    width: 57%;
+    height: 57%;
   }
 
   .cta3 {
