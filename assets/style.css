@@ -326,10 +326,6 @@ nav .mobile li {
   border-bottom: var(--clr-primary) solid 3px;
 }
 
-.mobile-links {
-  display: none;
-}
-
 .fa-times {
   font-size: 3rem;
   color: rgb(212, 78, 78);
