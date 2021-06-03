@@ -318,10 +318,12 @@ header .btn-wrapper {
 }
 
 .konsole {
+  justify-content: center;
   order: 1;
-  width: 310px;
+  max-width: 320px;
+  min-width: 300px;
   margin: 3em 0;
-  padding: 1em 2em;
+  padding: 1em 0;
   border-radius: 0.75em;
   background-color: var(--clr-bgsec);
 }
