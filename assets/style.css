@@ -308,11 +308,6 @@ h1 {
   width: 80%;
   margin: auto;
 }
-
-.mobile-links {
-  display: none;
-}
-
 nav .mobile {
   text-align: center;
   padding: 3em;
@@ -329,6 +324,10 @@ nav .mobile li {
   display: block;
   padding: 1em;
   border-bottom: var(--clr-primary) solid 3px;
+}
+
+.mobile-links {
+  display: none;
 }
 
 .fa-times {
