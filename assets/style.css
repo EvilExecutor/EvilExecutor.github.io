@@ -73,6 +73,7 @@ p {
   color: var(--clr-p);
   font-size: 1.4rem;
   font-weight: 400;
+  line-height: 22px;
 }
 
 a {
@@ -124,6 +125,7 @@ header {
   padding: 0.75em 2em;
   border-radius: 0.5em;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .btn-secondary {
@@ -135,6 +137,7 @@ header {
   padding: 0.75em 2em;
   border-radius: 0.5em;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .btn-primary:hover,
@@ -154,6 +157,8 @@ header {
 
 .stats i {
   color: var(--clr-primary);
+  width: 25px;
+  text-align: center;
 }
 
 .cta2 i,
@@ -244,9 +249,13 @@ header {
   font-weight: 700;
 }
 
+.cta-head span {
+  font-style: italic;
+}
+
 .cta-body {
   color: var(--clr-h);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 500;
 }
 
@@ -307,6 +316,7 @@ h1 {
 .container {
   width: 80%;
   margin: auto;
+  max-width: 1200px;
 }
 nav .mobile {
   text-align: center;
@@ -324,6 +334,10 @@ nav .mobile li {
   display: block;
   padding: 1em;
   border-bottom: var(--clr-primary) solid 3px;
+}
+
+nav .mobile .bold {
+  border-top: var(--clr-primary) solid 3px;
 }
 
 .fa-times {
@@ -388,17 +402,87 @@ header .btn-wrapper {
   margin-top: 1.3em;
 }
 
+.popup {
+  position: fixed;
+  padding: 10px;
+  max-width: 500px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--bg-cards);
+  visibility: hidden;
+  opacity: 0;
+  /* "delay" the visibility transition */
+  -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
+  transition: opacity 0.5s, visibility 0s linear 0.5s;
+  z-index: 1;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+  /* cancel visibility transition delay */
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.popup-close {
+  position: absolute;
+  padding: 10px;
+  max-width: 500px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+}
+.popup .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 5px;
+  color: #000;
+  transition: color 0.3s;
+  font-size: 2em;
+  line-height: 0.6em;
+  font-weight: bold;
+}
+.popup .close:hover {
+  color: #00e5ee;
+}
+
+.close-popup {
+  background: rgba(0, 0, 0, 0.7);
+  cursor: default;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  /* "delay" the visibility transition */
+  -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
+  transition: opacity 0.5s, visibility 0s linear 0.5s;
+}
+.popup:target + .close-popup {
+  opacity: 1;
+  visibility: visible;
+  /* cancel visibility transition delay */
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
 .cta3 {
   display: none;
 }
 
 .hello {
   margin-top: 1.3em;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.6em;
 }
 
 .stats-list {
-  margin-top: 2em;
+  margin-top: 1.8em;
   margin-bottom: 5em;
 }
 
@@ -429,6 +513,22 @@ h2 {
 
 .passions {
   margin-bottom: 5em;
+}
+
+.tech-btn {
+  text-align: center;
+  background-color: var(--clr-bgsec);
+  display: inline-block;
+  padding: 0.75em 2em;
+  border-radius: 10em;
+  width: 135px;
+}
+
+.tech-btn i,
+.tech-btn p {
+  display: inline-block;
+  color: var(--clr-p);
+  font-size: 1.5rem;
 }
 
 .projects h2 {
@@ -584,7 +684,7 @@ footer {
   }
 
   .about img {
-    width: 80%;
+    width: 85%;
     text-align: justify;
   }
 
@@ -613,6 +713,7 @@ footer {
   .projects .card {
     width: 90%;
     margin: auto;
+    flex: 1;
   }
 
   .projects {
