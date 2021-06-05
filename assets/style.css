@@ -61,6 +61,12 @@ h1 {
 h2 {
   color: var(--clr-h);
   font-size: 2.8rem;
+  display: inline;
+}
+
+section h2 {
+  padding-top: 0.3em;
+  border-top: var(--clr-primary) solid 5px;
 }
 
 h3 {
@@ -515,8 +521,12 @@ h2 {
   margin-bottom: 5em;
 }
 
-.technologies h2 {
-  margin-bottom: 0.8em;
+.ct-head {
+  margin-bottom: 3.5em;
+}
+
+.projects .ct-head {
+  margin-bottom: 5em;
 }
 
 .tech-wrapper {
@@ -554,11 +564,31 @@ h2 {
 }
 
 .technologies {
-  margin-bottom: 5em;
+  margin-bottom: 10em;
 }
 
+.technologies h2,
 .projects h2 {
-  margin-bottom: 2em;
+  text-align: center;
+}
+
+.tech-wrapper {
+  animation: float 12s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatex(0px);
+  }
+  25% {
+    transform: translatex(-20px);
+  }
+  75% {
+    transform: translatex(20px);
+  }
+  100% {
+    transform: translatex(0px);
+  }
 }
 
 .projects img {
