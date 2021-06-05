@@ -542,8 +542,11 @@ h2 {
 .tech-btn i,
 .tech-btn p {
   display: inline-block;
-  color: var(--clr-p);
-  font-size: 1.5rem;
+}
+
+.tech-btn i {
+  font-size: 1.5em;
+  color: var(--clr-primary);
 }
 
 .technologies {
