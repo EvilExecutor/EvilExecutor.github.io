@@ -549,6 +549,10 @@ h2 {
   color: var(--clr-primary);
 }
 
+.tech-btn img {
+  color: #0bceaf;
+}
+
 .technologies {
   margin-bottom: 5em;
 }
