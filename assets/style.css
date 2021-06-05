@@ -65,8 +65,8 @@ h2 {
 }
 
 section h2 {
-  padding-top: 0.3em;
-  border-top: var(--clr-primary) solid 5px;
+  padding-top: 0.25em;
+  border-top: var(--clr-primary) solid 4px;
 }
 
 h3 {
@@ -410,7 +410,7 @@ header .btn-wrapper {
 
 .popup {
   position: fixed;
-  padding: 10px;
+  padding: 3em;
   max-width: 500px;
   border-radius: 10px;
   top: 50%;
@@ -423,6 +423,7 @@ header .btn-wrapper {
   -webkit-transition: opacity 0.5s, visibility 0s linear 0.5s;
   transition: opacity 0.5s, visibility 0s linear 0.5s;
   z-index: 1;
+  text-align: center;
 }
 .popup:target {
   visibility: visible;
@@ -478,6 +479,15 @@ header .btn-wrapper {
   transition-delay: 0s;
 }
 
+.ctn-prm {
+  color: var(--clr-primary);
+}
+
+.close {
+  font-size: 20rem;
+  color: #b62929;
+}
+
 .cta3 {
   display: none;
 }
@@ -514,7 +524,7 @@ h2 {
 }
 
 .passions h3 {
-  margin-bottom: 0.4em;
+  margin-bottom: 0.7em;
 }
 
 .passions {
@@ -673,6 +683,10 @@ footer {
     align-items: flex-start;
   }
 
+  h2 {
+    font-size: 3.2rem;
+  }
+
   .center-off {
     text-align: start;
   }
@@ -708,6 +722,9 @@ footer {
   .hero-cont {
     height: 100vh;
     min-height: 550px;
+  }
+  .hello {
+    font-size: 3.4rem;
   }
 
   .hero-cont .column {
@@ -745,7 +762,7 @@ footer {
   }
 
   .about-content {
-    width: 75%;
+    width: 90%;
     margin: auto;
   }
 
@@ -777,6 +794,18 @@ footer {
   }
 
   .cta {
+    margin-bottom: 10em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about .ct-head {
+    margin-top: 3em;
+  }
+  .about {
+    margin-bottom: 10em;
+  }
+  .passions {
     margin-bottom: 10em;
   }
 }
